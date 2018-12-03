@@ -90,11 +90,10 @@ namespace cryptonote {
   }
   //-----------------------------------------------------------------------------------------------
   bool get_block_reward(size_t median_size, size_t current_block_size, uint64_t already_generated_coins, uint64_t &reward, uint8_t version, uint64_t height) {
-
-    //premine reward
+    
     if (already_generated_coins == 0)
     {
-      reward = 22500000000000000;
+      reward = 1;
       return true;
     }
 
@@ -108,9 +107,9 @@ namespace cryptonote {
       base_reward = 0;
     }
 
-    if (version >= 8)
-      base_reward = 28000000000.0 + 100000000000.0 / loki_exp2(height / (720.0 * 90.0)); // halve every 90 days.
-
+    //if (version >= 8)
+    // base_reward = 28000000000.0 + 100000000000.0 / loki_exp2(height / (720.0 * 90.0)); // halve every 90 days.
+  
     uint64_t full_reward_zone = get_min_block_size(version);
 
     //make it soft

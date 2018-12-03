@@ -94,8 +94,8 @@ static const struct {
 } mainnet_hard_forks[] = {
   // version 7 from the start of the blockchain, inhereted from Monero mainnet
   { 7, 1, 0, 1503046577 },
-  { 8, 64324, 0, 1533006000 },
-  { 9, 101250, 0, 1537444800 },
+  { 8, 2, 0, 1533006000 },
+  { 9, 900, 0, 1537444800 },
 };
 
 static const struct {
@@ -117,9 +117,9 @@ static const struct {
   time_t time;
 } stagenet_hard_forks[] = {
   // version 7 from the start of the blockchain, inhereted from Monero testnet
-  { 7, 1, 0, 1341378000 },
-  { 8, 64324, 0, 1533006000 },
-  { 9, 96210, 0, 1536840000 },
+  { 7, 1, 0, 1533631121 },
+  { 8, 2, 0, 1533631122 },
+  { 9, 3, 0, 1533631123 },
 };
 
 //------------------------------------------------------------------
@@ -4643,6 +4643,8 @@ void Blockchain::load_compiled_in_block_hashes()
       if (hash != expected_hash)
       {
         MERROR("Block hash data does not match expected hash");
+        MERROR("hash: " << hash << " ms");
+        MERROR("expected_hash" << expected_hash << " ms");
         return;
       }
     }

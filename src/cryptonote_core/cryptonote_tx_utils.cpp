@@ -108,7 +108,7 @@ namespace cryptonote
 
   uint64_t get_service_node_reward(uint64_t height, uint64_t base_reward, int hard_fork_version)
   {
-    return hard_fork_version >= 9 ? base_reward / 2 : 0;
+    return hard_fork_version >= 9 ? base_reward / 4 : 0;
   }
 
   uint64_t get_portion_of_reward(uint64_t portions, uint64_t total_service_node_reward)

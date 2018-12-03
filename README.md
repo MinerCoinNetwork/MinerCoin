@@ -1,34 +1,33 @@
-# Loki
+# MinerCoin
 
 <p align="center">
     <a href="https://github.com/loki-project/loki/commits/dev"><img alt="pipeline status" src="https://gitlab.com/lokiproject/loki/badges/dev/pipeline.svg" /></a>
 </p>
 
+Copyright (c) 2018 The MinerCoin Project.  
 Copyright (c) 2018 The Loki Project.   
 Portions Copyright (c) 2014-2018 The Monero Project.   
 Portions Copyright (c) 2012-2013 The Cryptonote developers.
 
 ## Development resources
 
-- Web: [loki.network](https://loki.network)
-- Telegram: [t.me/LokiCommunity](https://t.me/LokiCommunity)
-- Mail: [team@loki.network](mailto:team@loki.network)
-- GitHub: [https://github.com/loki-project/loki](https://github.com/loki-project/loki)
-- Discord: [https://discord.gg/67GXfD6](https://discord.gg/67GXfD6)
+- Web: [minercoin.network](http://minercoin.network)
+- Mail: [info@minercoin.network](mailto:info@minercoin.network)
+- GitHub: [https://github.com/MinerCoinNetwork/MinerCoin](https://github.com/MinerCoinNetwork/MinerCoin)
+- Discord: [https://discord.gg/QazYQ9X](https://discord.gg/QazYQ9X)
 
 ## Vulnerability disclosure
 
-- Check out our [Vulnerability Response Process](https://github.com/loki-project/Meta/blob/master/VULNERABILITY_RESPONSE_LOKI.md), encourages prompt disclosure of any Vulnerabilities
+- Check out our [Vulnerability Response Process](), encourages prompt disclosure of any Vulnerabilities
 
 ## Information
 
-Loki is a private cryptocurrency based on Monero. Over the course of the coming months, the Loki project aims to offer an incenvised full node layer with a secondary p2p network that offers a private communications layer based on the Tox protocol.
-
+MinerCoin is a private cryptocurrency based on Monero. MinerCoin currently offers an incentivised full node layer, over the coming months we will be looking to support a secondary p2p network to sell or buy computing power on demand.
 More information on the project can be found on the website and in the whitepaper.
 
-Loki is an open source project, and we encourage contributions from anyone with something to offer. For more information on contributing, please contact team@loki.network
+MinerCoin is an open source project, and we encourage contributions from anyone with something to offer. For more information on contributing, please contact info@minercoin.network
 
-## Compiling Loki from source
+## Compiling MinerCoin from source
 
 ### Dependencies
 
@@ -69,15 +68,15 @@ build the library binary manually. This can be done with the following command `
 
 Clone recursively to pull-in needed submodule(s):
 
-`$ git clone --recursive https://github.com/loki-project/loki`
+`$ git clone --recursive https://github.com/MinerCoinNetwork/MinerCoin`
 
 If you already have a repo cloned, initialize and update:
 
-`$ cd loki && git submodule init && git submodule update`
+`$ cd MinerCoin && git submodule init && git submodule update`
 
 ### Build instructions
 
-Loki uses the CMake build system and a top-level [Makefile](Makefile) that
+MinerCoin uses the CMake build system and a top-level [Makefile](Makefile) that
 invokes cmake commands as needed.
 
 #### On Linux and OS X
@@ -85,7 +84,7 @@ invokes cmake commands as needed.
 * Install the dependencies
 * Change to the root of the source code directory and build:
 
-        cd loki
+        cd MinerCoin
         make
 
     *Optional*: If your machine has several cores and enough memory, enable
