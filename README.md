@@ -1,7 +1,7 @@
 # MinerCoin
 
 <p align="center">
-    <a href="https://github.com/loki-project/loki/commits/dev"><img alt="pipeline status" src="https://gitlab.com/lokiproject/loki/badges/dev/pipeline.svg" /></a>
+
 </p>
 
 Copyright (c) 2018 The MinerCoin Project.  
